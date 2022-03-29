@@ -1,0 +1,62 @@
+<html>
+  <style>
+    #boxe1 {background-color:red;}
+    #boxe2 {background-color:blue;}
+    #boxe3 {background-color: yellow;}
+    #boxe4 {background-color:green; }
+    
+    .generalbox{height: 200px;
+                width: 200px;
+                margin: 2px;
+                padding: 2px;
+                border: outset black;
+                float: left;}
+   
+  </style>
+ 
+ 
+    <div id="boxe1" class="generalbox">
+        <button onclick="cambiacolore1()">
+                cambia colore
+        </button>
+    </div>
+   <div id="boxe2" class="generalbox">
+    <button  onclick="cambiacolore2()">
+            cambia colore
+    </button>
+    </div>
+
+    <br><br><br>  <br><br><br><br><br><br><br><br><br>
+
+    <div id="boxe3" class="generalbox"> 
+        <button onclick="cambiacolore3()">
+            cambia colore
+        </button>
+    </div>
+ 
+   <div id="boxe4" class="generalbox"> 
+    <button onclick="cambiacolore4()">
+            cambia colore
+    </button>
+    </div>
+  
+    <script>
+       
+
+    function cambiacolore1( ){
+        document.getElementById("boxe1").style.backgroundColor="fuchsia";
+}
+
+function cambiacolore2( ){
+        document.getElementById("boxe2").style.backgroundColor="maroon";
+}
+
+function cambiacolore3( ){
+        document.getElementById("boxe3").style.backgroundColor="lime";
+}
+
+function cambiacolore4( ){
+        document.getElementById("boxe4").style.backgroundColor="yellow";
+}
+    </script>
+ </html>
