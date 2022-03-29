@@ -1,0 +1,117 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/deiaco.css">
+   
+    <title>Lancio Di un dado</title>
+   
+<style>
+        .box1{
+            height: 300px;
+            width: 300px;
+            border: outset black 2px;
+            background-color: rgb(0, 16, 233);
+        }
+
+        .button{
+            margin: 10px;
+        }
+
+        .text{
+            margin: 10px;
+        }
+
+        .pallino{
+            width:20px;
+	        height:20px;
+	        border-radius:10px;
+	        background:black;
+          
+        }
+</style></head>
+
+
+
+
+<body>
+   
+<div class="box1">
+
+    <button class="button" onclick="lanciodado(9); lanciodado2(9); lanciodado3(9);"> lancia il dado</button>
+    <p class="text" id="out3"></p>
+    <div id="pallino" class="pallino"></div>
+    <p class="text" id="out6"></p>
+    <div id="pallino2" class="pallino"></div>
+    <p class="text" id="out9"></p>
+    <div id="pallino3" class="pallino"></div>
+
+    <br><br><br>
+
+    <p id="punti" class="punteggio">
+        50 crediti
+    </p> 
+    
+
+
+</div>
+
+<script>
+     function lanciodado(n) {
+            let dado=0;
+            dado=Math.round((Math.random()*n)+1);
+            document.getElementById("out3").innerHTML=dado+ " ";
+           
+     if(dado>=5)
+     {
+        document.getElementById("pallino").style.backgroundColor="red";
+     }
+     else
+     {
+        document.getElementById("pallino").style.backgroundColor="blueviolet";
+     }
+          }
+
+          
+
+
+
+     function lanciodado2(n) {
+            let dado2=0;
+            dado2=Math.round((Math.random()*n)+1);
+            document.getElementById("out6").innerHTML=dado2+ " ";
+            if(dado2>=5)
+     {
+        document.getElementById("pallino2").style.backgroundColor="red";
+     }
+     else
+     {
+        document.getElementById("pallino2").style.backgroundColor="blueviolet";
+     }
+          }
+
+
+
+
+          function lanciodado3(n) {
+            let dado3=0;
+            dado3=Math.round((Math.random()*n)+1);
+            document.getElementById("out9").innerHTML=dado3+ " ";
+           
+            if(dado3>=5)
+     {
+        document.getElementById("pallino3").style.backgroundColor="red";
+     }
+     else
+     {
+        document.getElementById("pallino3").style.backgroundColor="blueviolet";
+     }
+          }
+
+</script>
+
+
+
+
+
+</body></html>
