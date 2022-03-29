@@ -1,0 +1,78 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button onclick="caricaarray()"> carica array </button>
+    <button onclick="trovamax()"> trova max </button>
+    <button onclick="trovamin()"> trova min </button>
+
+    <p id="out"></p>
+    <br>
+    <p id="max"></p>
+    
+    <p id="posmax"></p>
+    <br><br>
+    <p id="min"></p>
+    
+    <p id="posmin"></p>
+
+        <script>
+                let arraydatiCasuali=[];
+                let i;
+                function caricaarray()
+                {
+                    let numerocasuale=-1;
+                    for(i=0;i<1000;i++)
+                    {
+                        numerocasuale=parseInt(Math.random()*1000);
+                        arraydatiCasuali.push(numerocasuale);
+                        document.getElementById("out").innerHTML+=arraydatiCasuali[i]+" ";
+                    }
+                }
+
+                function trovamax()
+                {
+                    let max=0;
+                    let posmax=0;
+                    for(i=0;i<1000;i++)
+                    {
+                        if(arraydatiCasuali[i]>max)
+                        {
+                            max=arraydatiCasuali[i];
+                            posmax=i;
+                            
+                        }
+                        
+                    }
+                    document.getElementById("max").innerHTML+="valore massimo: "+max;
+                    document.getElementById("posmax").innerHTML+="la posizione del valore massimo è: "+posmax;
+                }
+
+                function trovamin()
+                {
+                    let min=100000;
+                    let posmin=0;
+                    for(i=0;i<1000;i++)
+                    {
+                        if(arraydatiCasuali[i]<min)
+                        {
+                            min=arraydatiCasuali[i];
+                            posmin=i;
+                            
+                        }
+                        
+                    }
+                    document.getElementById("min").innerHTML+="valore minimo: "+min;
+                    document.getElementById("posmin").innerHTML+="la posizione del valore minimo è: "+posmin;
+                }
+               
+        </script>
+
+
+
+</body></html>
