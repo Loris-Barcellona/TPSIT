@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+ <title>Document</title>
+ <style>
+ .btn-group button {
+ background-color: #ea00ff; /* Green background */
+ border: 3px solid rgb(0, 0, 0); /* Green border */
+ color: rgb(255, 255, 255); /* White text */
+ padding: 10px 24px; /* Some padding */
+ cursor: pointer; /* Pointer/hand icon */
+ width: 50%; /* Set a width if needed */
+ display: block; /* Make the buttons appear below each other
+*/
+ }
+
+ .btn-group button:not(:last-child) {
+ border-bottom: none; /* Prevent double borders */
+ }
+
+ /* Add a background color on hover */
+ .btn-group button:hover {
+ background-color:rgb(0, 17, 255);
+ }
+ </style>
+</head>
+<body>
+ <h1>tabelline</h1>
+ <div class="btn-group">
+ <button onclick="tabellinadel1()">Tabellina del 1</button>
+ <button onclick="tabellinadel2()">Tabellina del 2</button>
+ <button onclick="tabellinadel3()">Tabellina del 3</button>
+ <button onclick="tabellinadel4()">Tabellina del 4</button>
+ <button onclick="tabellinadel5()">Tabellina del 5</button>
+ <button onclick="tabellinadel6()">Tabellina del 6</button>
+ <button onclick="tabellinadel7()">Tabellina del 7</button>
+ <button onclick="tabellinadel8()">Tabellina del 8</button>
+ <button onclick="tabellinadel9()">Tabellina del 9</button>
+ <button onclick="tabellinadel10()">Tabellina del 10</button>
+ </div>
+ <p id="output">......</p>
+<script>
+function tabellinadel1Alert() {
+ alert("1 2 3 4 5 6 7 8 9 10");
+}
+function tabellinadel1() {
+ document.getElementById("output").innerHTML="1 2 3 4 5 6 7 8 9 10";
+}
+function tabellinadel2Alert() {
+ alert("1 2 3 4 5 6 7 8 9 10");
+}
+function tabellinadel2() {
+ document.getElementById("output").innerHTML="2 4 6 8 10 12 14 16 18 20";
+}
+function tabellinadel3Alert() {
+ alert("3 6 9 12 15 18 21 24 27 30");
+}
+function tabellinadel3() {
+ document.getElementById("output").innerHTML="3 6 9 12 15 18 21 24 27 30";
+}
+function tabellinadel4Alert() {
+ alert("4 8 12 16 20 24 28 32 36 40");
+}
+function tabellinadel4() {
+ document.getElementById("output").innerHTML="4 8 12 16 20 24 28 32 36 40";
+}
+function tabellinadel5Alert() {
+ alert("5 10 15 20 25 30 35 40 45 50");
+}
+function tabellinadel5() {
+ document.getElementById("output").innerHTML="5 10 15 20 25 30 35 40 45 50";
+}
+function tabellinadel6Alert() {
+ alert("6 12 18 24 30 36 42 48 54 60");
+}
+function tabellinadel6() {
+ document.getElementById("output").innerHTML="6 12 18 24 30 36 42 48 54 60";
+}
+function tabellinadel7Alert() {
+ alert("7 14 21 28 35 42 49 56 63 70");
+}
+function tabellinadel7() {
+ document.getElementById("output").innerHTML="7 14 21 28 35 42 49 56 63 70";
+}
+function tabellinadel8Alert() {
+ alert("8 16 24 32 40 48 56 64 72 80");
+}
+function tabellinadel8() {
+ document.getElementById("output").innerHTML="8 16 24 32 40 48 56 64 72 80";
+}
+function tabellinadel19Alert() {
+ alert("9 18 27 36 45 54 63 72 81 90");
+}
+function tabellinadel9() {
+ document.getElementById("output").innerHTML="9 18 27 36 45 54 63 72 81 90";
+}
+function tabellinadel10Alert() {
+ alert("10 20 30 40 50 60 70 80 90 100");
+}
+function tabellinadel10() {
+ document.getElementById("output").innerHTML="10 20 30 40 50 60 70 80 90 100";
+}
+</script>
+
+</body>
+</html>
