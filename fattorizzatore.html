@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fattorizzatore (risoluzione di un enigma)</title>
+</head>
+<body>
+       <input id="mioinput" type="text">
+       <button onclick="dividinum();" id="mio bottone">cerca i fattori</button>
+
+    <script>
+
+function dividinum()
+    {
+        let in1=0;
+        in1=document.getElementById("mioinput").value;
+        document.write("il mio input è"+in1);
+        document.write("<br>");
+        document.write("<span>"+Fattorizzatore(in1)+"</span>"+"<br>");
+        document.write("<br>");
+    
+        function Fattorizzatore(n)
+        {
+            let fattore=1;
+            let fattoriOUT="";
+            for(fattore=1;fattore<=n/2;fattore++)
+            {
+                  if(n%fattore==0)
+                  {
+                     fattoriOUT=fattoriOUT+fattore+" ";
+                  }
+            }
+            return fattoriOUT;
+        }
+      
+
+    } 
+    </script>
+  
+</body>
+</html>
