@@ -1,0 +1,170 @@
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fattorizzatore</title>
+</head>
+<body>
+       <input id="mioinput" type="text">
+       <button onclick="input();" id="mio bottone">cerca i fattori dell'input</button>
+       <button onclick="es2();" id="mio bottone">es1 e 2</button>
+       <button onclick="es3();" id="mio bottone">es3</button>
+       <button onclick="es4();" id="mio bottone">es4</button>
+       <button onclick="es5();" id="mio bottone">es5</button>
+       <button onclick="es6();" id="mio bottone">es6</button>
+       <br><br>
+       <div class="w3-panel w3-blue w3-card-4"> 
+       <a type="button" class="btn btn-outline-warning" href="http://lorisbarcellona.altervista.org// ">Il mio Blog</a>
+       <br><br>
+       <a type="button" class="btn btn-outline-danger" href="https://loris-barcellona.github.io/TPSIT/#">Il mio Github</a>
+        </div>
+    <script>
+
+function input()
+    {
+        let in1=0;
+        in1=document.getElementById("mioinput").value;
+        document.write("il mio input è "+in1);
+        document.write("<br>");
+        document.write("<span>"+Fattorizzatore(in1)+"</span>"+"<br>");
+        document.write("<br>");
+    
+        function Fattorizzatore(n)
+        {
+            let fattore=1;
+            let fattoriOUT="";
+            for(fattore=1;fattore<=n/2;fattore++)
+            {
+                  if(n%fattore==0)
+                  {
+                     fattoriOUT=fattoriOUT+fattore+" ";
+                  }
+            }
+            return "questi sono i suoi fattori: "+fattoriOUT;
+        }
+    }
+   function es2(){
+     let fat=1;
+     let div=1;
+     let cont=0;
+     let cont1=0;
+     let contmax=0;
+     let a=0;
+    for (fat = 1; fat<1000; fat++)
+        {
+            for (div = 1; div<1000; div++)
+            {
+                if (fat%div==0)
+                {
+                    cont++;
+                    cont1++;
+                }
+ 
+            }  
+ 
+            if (cont >= contmax)
+                {
+                    contmax = cont;
+                    a = fat;
+                }
+                cont=0;
+        }      
+cont4=cont1-336;
+document.write("RISULTATO ES. 1: Il numero con più fattori é " + a + " e ne ha " + contmax);
+document.write("<br><br>" + "risultato esercizio n.2: La somma di tutti i fattori dei numeri < di 1000, esclusa la somma dei fattori dei numeri primi è " + cont4);
+
+}
+function es3(){
+    let fat=1;
+     let div=1;
+     let cont=0;
+     let cont1=0;
+     let contmax=0;
+     let a=0;
+    for (fat = 1; fat<2000; fat++)
+        {
+            for (div = 1; div<2000; div++)
+            {
+                if (fat%div==0)
+                {
+                    cont++;
+                    cont1++;
+                }
+ 
+            }  
+ 
+            if (cont >= contmax)
+                {
+                    contmax = cont;
+                    a = fat;
+                }
+                cont=0;
+        }
+       
+cont4=840*1680;
+
+document.write("il numero che contiene la quantità maggiore di fattori primi è " + a + " ed è " + contmax);
+document.write("<br><br>" + "risultato esercizio n.3: Il prodotto tra il numero con più fattori tra 0 e 1000 ,e tra 1000 e 2000 é " + cont4);
+    
+}
+
+function es4()
+{
+    let num=840;
+    let i=1;
+    let x;
+    let vx;
+
+    while(n<855)
+    {
+        do
+        {
+            i++;
+            x=num%i;
+        }while(x!=0)
+
+        vx=num;
+        num++;
+    }
+
+    document.write("risultato esercizio n.4: Il primo numero primo successivo al numero della soluzione del problema 1 è "+vx);
+}
+
+function es5()
+{
+    let num=6717;
+    let i=1;
+    let x;
+    let vx;
+
+    while(n<855)
+    {
+        do
+        {
+            i++;
+            x=num%i;
+        }while(x!=0)
+
+        vx=num;
+        num++;
+    }
+
+    document.write("risultato esercizio n.5: Il primo numero primo successivo al numero della soluzione del problema 2 è "+vx);
+}
+
+function es6()
+{
+    let a=6717;
+    let b=840;
+    let x;
+
+    x=a*b;
+
+    document.write("il prodotto del numero del punto 4 con quello del punto 5 è: "+x);
+}
+
+   </script>  
+
+</body>
+</html>
