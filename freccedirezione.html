@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <head>
+    <title>frecce</title>
+<style>
+    #boxe {
+      height:40px;
+              width:40px;
+              border: 3px outset rgb(255, 255, 255);
+              background-color: 	rgb(23, 7, 236);
+              margin:1px;
+              padding:20px;
+             float: left;
+    }
+
+    
+       #container{
+        border: 1px outset rgb(0, 0, 0);
+        
+        height: 100px;
+        width: 10;
+       }  
+        
+  </style>
+
+  </head>
+
+ <body>
+    
+ 
+    <div id="boxe">
+    </div>
+   <div id="boxe" class="comm" onclick="comm1()">
+    <button>
+        +
+    </button>
+    </div>
+    <div id="boxe"> 
+    </div>
+
+   
+    <br><br><br><br><br><br>
+ 
+   <div id="boxe" class="comm" onclick="comm2()"> 
+    <button>
+        +
+    </button>
+    </div>
+    <div id="boxe">
+    </div>
+    <div id="boxe" class="comm" onclick="comm4()">
+        <button>
+            +
+        </button>
+    </div>
+    <br><br><br> <br><br><br>
+    <div id="boxe">
+    </div>
+    <div id="boxe" class="comm" onclick="comm3()">
+        <button>
+            +
+        </button>
+    </div>
+
+    <div id="boxe">
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div id="container">
+    <p>
+        conteggio su/giù:
+    </p>
+    <p id="comm1">
+        
+    </p>
+
+    <p>
+        conteggio destra/sinistra:
+    </p>
+    
+    <p id="sinistra">
+        
+    </p>
+</div>
+  
+  <script>
+var counterVal = 0;
+        function comm1(){
+    updateDisplay(++counterVal);
+}
+
+function comm3(){
+    updateDisplay(--counterVal);
+}
+
+function updateDisplay(val) {
+    document.getElementById("comm1").innerHTML = val;
+}
+
+
+var counterVal2 = 0;
+        function comm2(){
+
+          
+    updateDisplay2(++counterVal2);
+}
+
+function comm4(){
+    updateDisplay2(--counterVal2);
+}
+
+function updateDisplay2(val2) {
+    document.getElementById("sinistra").innerHTML = val2;
+}
+ 
+
+  </script>
+</body>
+</html>
