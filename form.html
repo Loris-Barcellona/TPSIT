@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post-it!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+     <br>
+    <!-- titolo principale della pagina -->
+    <h1 class="display-3 text-center">Social Post it</h1><br><hr><br><br>
+
+    <!-- form per l'invio di un nuovo post -->
+    <form action="/add" method="POST">
+      <div class="form-group">
+        <!-- etichetta per il campo nickname -->
+        <h5 for="nickname">Nickname:</h5>
+        <!-- Campo per l'inserimento del nickname dell'utente -->
+        <input type="text" class="form-control btn-lg" id="nickname" name="nickname" placeholder="Inserisci il tuo nickname" maxlength="17">
+      </div>
+      <div class="form-group">
+        <!-- etichetta per il campo commento -->
+        <h5 for="commento">Commenta:</h5>
+        <!-- Campo per l'inserimento del commento dell'utente -->
+        <input type="text" class="form-control btn-lg" id="commento" name="commento" placeholder="Inserisci il tuo commento" maxlength="90">
+      </div>
+      <!-- pulsanti per l'invio del post e la visualizzazione dei post -->
+      <div class="d-flex justify-content-between align-items-center">
+         <!-- Pulsante per l'invio del post -->
+         <button type="submit" class="btn btn-primary btn-lg btn-success rounded-pill px-5">Invia</button>
+
+        <!-- form per la visualizzazione dei post -->
+        <form action="/viewPost" method="POST">
+           <!-- pulsante per la visualizzazione dei post -->
+<form action="/viewPost" method="POST">
+  <button type="submit" class="btn btn-info btn-lg rounded-pill px-5">Visualizza i post</button> 
+</form>
+
+        </form>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+/* Aggiunta di uno stile personalizzato */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Aggiunta di uno sfondo personalizzato */
+.bg-image {
+  background-image: url('https://picsum.photos/id/1043/1920/1080');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* Stile personalizzato per il titolo */
+h1 {
+  color: white;
+  font-size: 3rem;
+  margin-top: 5rem;
+  text-shadow: 2px 2px #000000;
+}
+
+/* Stile personalizzato per i post-it */
+.card {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  max-width: 18rem;
+}
+
+/* Stile personalizzato per i like */
+.like {
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  color: red;
+  font-size: 1.5rem;
+  height: 35px;
+  margin: 0.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35px;
+}
+
+/* Stile personalizzato per i nickname */
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Stile personalizzato per i commenti */
+.card-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
